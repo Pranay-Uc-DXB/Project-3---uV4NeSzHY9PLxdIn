@@ -31,7 +31,7 @@ https://github.com/Pranay-Uc-DXB/Project-3-uV4NeSzHY9PLxdIn/assets/62109186/5ef9
 
 Conclusion:
 
-When using transfer learning, despite subjecting training data to various data augmentation techniques, my model's performance (training accuracy) did not substantially improve. This indicated that data augmentation and transfer learning only works on specific use cases depending on the application. My testing accuracy was far better than my training accuracy, indicating underfitting, However, this may be the case due to the measures taken to reduce overfitting. Some of the measures included regularization (including dropouts), and introducing double non-linearity. Nevertheless, upon deploying the model, the classification model performed very well with only 3 false negatives.  
+When using transfer learning, despite subjecting training data to various data augmentation techniques, my model's performance (training accuracy) did not substantially improve. This indicated that data augmentation and transfer learning only works on specific use cases depending on the application. My testing accuracy was far better than my training accuracy, indicating underfitting, However, this may be the case due to the measures taken to reduce overfitting. Some of the measures included regularization (including dropouts), and introducing double non-linearity. Nevertheless, upon deploying the model, the classification model performed very well with only 5 false negatives.  
 
 Transfer learning may not always be the best approach towards computer vision projects. In my case, a custom LetNet architecture w/o transfer learning outperformed other networks while training and testing. 
 
