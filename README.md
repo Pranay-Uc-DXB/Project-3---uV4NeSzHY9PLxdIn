@@ -24,11 +24,17 @@ In this project, I developed and tested 4 different CNNs in Pytorch, namely:
 
 The aim was to pack the service app for mobile compatibility with total size less than 40MB and a minimum reporting F1 score of >=0.90.
 
-My Results:
-Total size/weight of the model obtained: 16.4MB
-Model F1 Score: 0.99
-
-
 Below, I demonstrate the final product that uses MobileNet V2 architecture in synergy with a custom classifier head (implementing transfer learning). Enjoy!
 
 https://github.com/Pranay-Uc-DXB/Project-3-uV4NeSzHY9PLxdIn/assets/62109186/5ef9b844-871f-4239-98fc-642340fb98ac
+
+
+Conclusion:
+
+When using transfer learning, despite subjecting training data to various data augmentation techniques, my model's performance (training accuracy) did not substantially improve. This indicated that data augmentation and transfer learning only works on specific use cases depending on the application. My testing accuracy was far better than my training accuracy, indicating underfitting, However, this may be the case due to the measures taken to reduce overfitting. Some of the measures included regularization (including dropouts), and introducing double non-linearity. Nevertheless, upon deploying the model, the classification model performed very well with only 3 false negatives.  
+
+Transfer learning may not always be the best approach towards computer vision projects. In my case, a custom LetNet architecture w/o transfer learning outperformed other networks while training and testing. 
+
+My Results with a custom classifier mounted on MobileNet V2 Architecture:
+1) Total size/weight of the model obtained: 16.4MB
+2) Model F1 Score: 0.99
