@@ -36,5 +36,5 @@ When using transfer learning, despite subjecting training data to various data a
 Transfer learning may not always be the best approach towards computer vision projects. In my case, a custom LetNet architecture w/o transfer learning outperformed other networks while training and testing. 
 
 My Results with a custom classifier mounted on MobileNet V2 Architecture:
-1) Total size/weight of the model obtained: 16.4MB
-2) Model F1 Score: 0.99
+1) Total size/weight of the model obtained: 16.4MB (Target: <40MB)
+2) Model F1 Score: 0.99 (Target: >=0.90)
