@@ -1,3 +1,5 @@
+# Computer Vision for Everyone
+
 Worked on a new mobile document digitization experience for the blind, researchers, and everyone else in need for fully automatic, highly fast and quality-driven document scanning services. This service is going to be packed in a mobile app and all the user needs to do is flip pages; rest everything is handled by the app. 
 
 
