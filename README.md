@@ -1,20 +1,15 @@
 # Computer Vision for Everyone
 
+
+# Introduction
 Worked on a new mobile document digitization experience for the blind, researchers, and everyone else in need for fully automatic, highly fast and quality-driven document scanning services. This service is going to be packed in a mobile app and all the user needs to do is flip pages; rest everything is handled by the app. 
-
-
-<img width="449" alt="image" src="https://github.com/Pranay-Uc-DXB/Project-3-uV4NeSzHY9PLxdIn/assets/62109186/49be66f4-f52a-496d-897b-a300695109da"> <img width="194" alt="image" src="https://github.com/Pranay-Uc-DXB/Project-3-uV4NeSzHY9PLxdIn/assets/62109186/79602059-addc-475e-b2f5-ab0348d1a540">
-
-
-
-
-
-
-
 
 So, how does the app work? 
 
-The app will detect page flips from low-resolution camera preview and take a high-resolution picture of the document, recognizing its corners and cropping it accordingly. It will then dewarp the cropped document to obtain a bird's eye view, sharpen the contrast between the text and the background and finally recognize the text with formatting kept intact. The formatting is further corrected by app’s ML powered redactor.
+The app will detect page flips from low-resolution camera preview and take a high-resolution picture of the document, recognizing its corners and cropping it accordingly. It will then dewarp the cropped document to obtain a bird's eye view, sharpen the contrast between the text and the background and finally recognize the text with formatting kept intact. The formatting is further corrected by app’s ML powered reactor.
+
+
+# Methodology:
 
 In this project, I developed and tested 4 different CNNs in Pytorch, namely:
 1)  LeNet-5
@@ -29,12 +24,14 @@ Below, I demonstrate the final product that uses MobileNet V2 architecture in sy
 https://github.com/Pranay-Uc-DXB/Project-3-uV4NeSzHY9PLxdIn/assets/62109186/5ef9b844-871f-4239-98fc-642340fb98ac
 
 
-Conclusion:
+# Conclusion:
+
+<img width="449" alt="image" src="https://github.com/Pranay-Uc-DXB/Project-3-uV4NeSzHY9PLxdIn/assets/62109186/49be66f4-f52a-496d-897b-a300695109da"> <img width="194" alt="image" src="https://github.com/Pranay-Uc-DXB/Project-3-uV4NeSzHY9PLxdIn/assets/62109186/79602059-addc-475e-b2f5-ab0348d1a540">
 
 When using transfer learning, despite subjecting training data to various data augmentation techniques, my model's performance (training accuracy) did not substantially improve. This indicated that data augmentation and transfer learning only works on specific use cases depending on the application. My testing accuracy was far better than my training accuracy, indicating underfitting, However, this may be the case due to the measures taken to reduce overfitting. Some of the measures included regularization (including dropouts), and introducing double non-linearity. Nevertheless, upon deploying the model, the classification model performed very well with only 5 false negatives.  
 
 Transfer learning may not always be the best approach towards computer vision projects. In my case, a custom LetNet architecture w/o transfer learning outperformed other networks while training and testing. 
 
 My Results with a custom classifier mounted on MobileNet V2 Architecture:
-1) Total size/weight of the model obtained: 16.4MB (Target: <40MB)
+1) Total size/weight of the model obtained: 16.4MB (Target: <20MB)
 2) Model F1 Score: 0.99 (Target: >=0.90)
