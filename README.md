@@ -17,7 +17,7 @@ In this project, I developed and tested 4 different CNNs in Pytorch, namely:
 3)  ResNet18
 4)  MobileNetV2.
 
-The aim was to pack the service app for mobile compatibility with total size less than 40MB and a minimum reporting F1 score of >=0.90.
+The aim was to pack the service app for mobile compatibility with total size less than 20MB and a minimum reporting F1 score of >=0.90.
 
 Below, I demonstrate the final product that uses MobileNet V2 architecture in synergy with a custom classifier head (implementing transfer learning). Enjoy!
 
